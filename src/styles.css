@@ -1,16 +1,143 @@
 body {
-  background-color: #262626;
+  background-color: #212529;
   color: #ffffff;
-  margin: 20px;
+  margin: 0;
   font-family: "Poppins", sans-serif;
 }
+
 h1 {
   color: #f6c90e;
-  font-family: "Open Sans", sans-serif;
+  font-size: 36px;
+  font-family: "Fascinate", cursive;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 30px;
 }
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100px;
+  vertical-align: top;
+  letter-spacing: 1.2px;
+  color: #ffffff;
+  margin: 10px auto;
+}
+
+button {
+  background: #f6c90e;
+  border: 0px solid #f6c90e;
+  border-radius: 50px;
+  text-align: center;
+  padding: 18px 30px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  margin-top: 30px;
+}
+
+button:hover {
+  border: 1px solid #f6c90e;
+  background: #212529;
+  color: #f6c90e;
+}
+
+img {
+  vertical-align: top;
+  max-width: 320px;
+  max-height: 381px;
+  mix-blend-mode: lighten;
+  box-shadow: 4px 4px 4px 3px rgba(0, 0, 0, 0.35);
+  margin: 20px;
+}
+.hero {
+  background-color: #212529;
+  padding: 150px 20px;
+  text-align: center;
+}
+.footer {
+  font-size: 16px;
+  padding: 20px;
+  width: 100%;
+}
+
+.footer a {
+  color: #f6c90e;
+  text-decoration: none;
+  padding-left: 20px;
+}
+.footer a:hover {
+  color: #f6c80ed0;
+}
+
 /*
-font-family: 'Fascinate', cursive;
+
   font-family: "Alfa Slab One", cursive;
 font-family: 'Open Sans', sans-serif;
   font-family: "Fascinate", cursive;
+   font-family: "Open Sans", sans-serif;
 */
+h1 span {
+  display: inline-block;
+  animation: animate 1s ease-in forwards;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotateY(90deg);
+    filter: blur(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateY(0deg);
+    filter: blur(0px);
+  }
+}
+h1 span:nth-child(1) {
+  animation-delay: 1s;
+}
+h1 span:nth-child(2) {
+  animation-delay: 1.25s;
+}
+h1 span:nth-child(3) {
+  animation-delay: 1.5s;
+}
+h1 span:nth-child(4) {
+  animation-delay: 1.75s;
+}
+h1 span:nth-child(5) {
+  animation-delay: 2s;
+}
+h1 span:nth-child(6) {
+  animation-delay: 2.25s;
+}
+h1 span:nth-child(7) {
+  animation-delay: 2.5s;
+}
+h1 span:nth-child(8) {
+  animation-delay: 2.75s;
+}
+h1 span:nth-child(9) {
+  animation-delay: 3s;
+}
+h1 span:nth-child(10) {
+  animation-delay: 3.25s;
+}
+h1 span:nth-child(11) {
+  animation-delay: 3.5s;
+}
+h1 span:nth-child(12) {
+  animation-delay: 3.75s;
+}
+h1 span:nth-child(13) {
+  animation-delay: 4s;
+}
+h1 span:nth-child(14) {
+  animation-delay: 4.25s;
+}
+h1 span:nth-child(15) {
+  animation-delay: 4.5s;
+}
