@@ -38,6 +38,7 @@ h3 {
 
 p.project-lead {
   font-weight: 300;
+  margin: 0;
 }
 
 a.navbar-brand {
@@ -67,10 +68,55 @@ button.primary-button {
   white-space: nowrap;
 }
 
-button:hover {
+button.primary-button:hover {
   border: 1px solid #f6c90e;
   background: #212529;
   color: #f6c90e;
+  box-shadow: 0 0 0 0.2rem #f6c80ea4;
+}
+
+a.github-btn {
+  color: #212529;
+  text-decoration: none;
+  background: #fc9a1a;
+  border: 1px solid #fc9a1a;
+  border-radius: 50px;
+  text-align: center;
+  padding: 13px 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  white-space: nowrap;
+}
+
+a.github-btn:hover {
+  border: 1px solid #fc9a1a;
+  background: #212529;
+  color: #fc9a1a;
+  box-shadow: 0 0 0 0.2rem #fc9a1aa2;
+}
+
+a.launch-btn {
+  color: #212529;
+  text-decoration: none;
+  background: #f4a5a1;
+  border: 1px solid #f4a5a1;
+  border-radius: 50px;
+  text-align: center;
+  padding: 13px 15.75px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  white-space: nowrap;
+}
+
+a.launch-btn:hover {
+  border: 1px solid #f4a5a1;
+  background: #212529;
+  color: #f4a5a1;
+  box-shadow: 0 0 0 0.2rem #f4a5a1ad;
 }
 
 .project-image img {
@@ -178,7 +224,7 @@ h1 span:nth-child(15) {
 
 @media (max-width: 575px) {
   .hero {
-    padding: 10px;
+    padding: 20px 10px;
   }
   .work-inquiry {
     text-align: center;
