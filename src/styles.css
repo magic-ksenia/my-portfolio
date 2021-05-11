@@ -1,33 +1,61 @@
 body {
-  background-color: #212529;
+  background-color: #ffffff;
   color: #ffffff;
   margin: 0;
   font-family: "Poppins", sans-serif;
+  padding-bottom: 50px;
 }
 
+main > .container-fluid {
+  padding-top: 50px;
+}
 h1 {
   color: #f6c90e;
-  font-size: 36px;
+  font-size: 35px;
   font-family: "Fascinate", cursive;
-  font-weight: 400;
-  text-transform: uppercase;
   margin-bottom: 30px;
 }
 
-h3 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
+h2.project-name {
+  font-size: 32px;
+  font-weight: 500;
+}
+h4 {
+  color: #f6c90e;
   font-size: 40px;
-  line-height: 100px;
+  font-family: "Fascinate", cursive;
+  margin-bottom: 20px;
+}
+h3 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 80px;
   vertical-align: top;
   letter-spacing: 1.2px;
   color: #ffffff;
   margin: 10px auto;
 }
 
-button {
+p.project-lead {
+  font-weight: 300;
+}
+
+a.navbar-brand {
+  font-family: "Fascinate", cursive;
+}
+
+img.portrait {
+  vertical-align: center;
+  max-width: 320px;
+  max-height: 381px;
+  mix-blend-mode: lighten;
+  box-shadow: 4px 4px 4px 3px rgba(0, 0, 0, 0.35);
+  margin: 20px;
+}
+
+button.primary-button {
   background: #f6c90e;
-  border: 0px solid #f6c90e;
+  border: 1px solid #f6c90e;
   border-radius: 50px;
   text-align: center;
   padding: 18px 30px;
@@ -36,6 +64,7 @@ button {
   font-size: 14px;
   line-height: 17px;
   margin-top: 30px;
+  white-space: nowrap;
 }
 
 button:hover {
@@ -44,22 +73,28 @@ button:hover {
   color: #f6c90e;
 }
 
-img {
-  vertical-align: top;
-  max-width: 320px;
-  max-height: 381px;
-  mix-blend-mode: lighten;
-  box-shadow: 4px 4px 4px 3px rgba(0, 0, 0, 0.35);
-  margin: 20px;
+.project-image img {
+  max-width: 100%;
+  border-radius: 10px 10px 0 0;
 }
+
 .hero {
   background-color: #212529;
-  padding: 150px 20px;
+  padding: 90px 20px 100px;
   text-align: center;
 }
+
+.work-inquiry {
+  border-radius: 20px;
+  margin: 20px;
+  padding: 40px;
+  background: #212529;
+}
+
 .footer {
+  background-color: #212529;
   font-size: 16px;
-  padding: 20px;
+  padding: 15px;
   width: 100%;
 }
 
@@ -69,17 +104,16 @@ img {
   padding-left: 20px;
 }
 .footer a:hover {
-  color: #f6c80ed0;
+  color: #ffffff;
 }
 
 /*
-
-  font-family: "Alfa Slab One", cursive;
+font-family: "Alfa Slab One", cursive;
 font-family: 'Open Sans', sans-serif;
-  font-family: "Fascinate", cursive;
-   font-family: "Open Sans", sans-serif;
+font-family: "Fascinate", cursive;
 */
 h1 span {
+  text-transform: uppercase;
   display: inline-block;
   animation: animate 1s ease-in forwards;
 }
@@ -100,44 +134,111 @@ h1 span:nth-child(1) {
   animation-delay: 1s;
 }
 h1 span:nth-child(2) {
-  animation-delay: 1.25s;
+  animation-delay: 1.2s;
 }
 h1 span:nth-child(3) {
-  animation-delay: 1.5s;
+  animation-delay: 1.4s;
 }
 h1 span:nth-child(4) {
-  animation-delay: 1.75s;
+  animation-delay: 1.6s;
 }
 h1 span:nth-child(5) {
-  animation-delay: 2s;
+  animation-delay: 1.8s;
 }
 h1 span:nth-child(6) {
-  animation-delay: 2.25s;
+  animation-delay: 2s;
 }
 h1 span:nth-child(7) {
-  animation-delay: 2.5s;
+  animation-delay: 2.2s;
 }
 h1 span:nth-child(8) {
-  animation-delay: 2.75s;
+  animation-delay: 2.4s;
 }
 h1 span:nth-child(9) {
-  animation-delay: 3s;
+  animation-delay: 2.6s;
 }
 h1 span:nth-child(10) {
-  animation-delay: 3.25s;
+  animation-delay: 2.8s;
 }
 h1 span:nth-child(11) {
-  animation-delay: 3.5s;
+  animation-delay: 3s;
 }
 h1 span:nth-child(12) {
-  animation-delay: 3.75s;
+  animation-delay: 3.2s;
 }
 h1 span:nth-child(13) {
-  animation-delay: 4s;
+  animation-delay: 3.4s;
 }
 h1 span:nth-child(14) {
-  animation-delay: 4.25s;
+  animation-delay: 3.6s;
 }
 h1 span:nth-child(15) {
-  animation-delay: 4.5s;
+  animation-delay: 3.8s;
 }
+
+@media (max-width: 575px) {
+  .hero {
+    padding: 10px;
+  }
+  .work-inquiry {
+    text-align: center;
+    padding: 20px 10px;
+  }
+  img.portrait {
+    max-width: 120px;
+    max-height: 143px;
+  }
+  h1 {
+    font-size: 19px;
+    margin-bottom: 10px;
+  }
+  h3 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 40px;
+  }
+  h4 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  button.primary-button {
+    margin: 15px auto;
+  }
+  p {
+    font-size: 14px;
+  }
+  .footer {
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .hero {
+    padding: 20px;
+  }
+  .work-inquiry {
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  h1 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  img.portrait {
+    max-width: 240px;
+    max-height: 285px;
+  }
+}
+/*
+xs <576px	
+sm ≥576px
+md ≥768px	
+lg ≥992px	
+xl ≥1200px	
+xxl ≥1400px*/
