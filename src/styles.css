@@ -1,6 +1,15 @@
+:root {
+  --branding-color: #f6c90e;
+  --primary-background-color: #212529;
+  --secondary-background-color: #ffffff;
+  --primary-text-color: #ffffff;
+  --secondary-text-color: #212529;
+  --box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+}
+
 body {
-  background-color: #ffffff;
-  color: #ffffff;
+  background-color: var(--secondary-background-color);
+  color: var(--primary-text-color);
   margin: 0;
   font-family: "Poppins", sans-serif;
   padding-bottom: 50px;
@@ -9,114 +18,110 @@ body {
 main > .container-fluid {
   padding-top: 50px;
 }
+
 h1 {
-  color: #f6c90e;
-  font-size: 35px;
-  font-family: "Fascinate", cursive;
-  margin-bottom: 30px;
+  font-size: 3.5vw;
+  margin: 35px auto;
 }
 
 h2.project-name {
   font-size: 32px;
   font-weight: 500;
 }
-h4 {
-  color: #f6c90e;
+
+h2.header {
   font-size: 40px;
-  font-family: "Fascinate", cursive;
+  letter-spacing: 1.1px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 40px;
   margin-bottom: 20px;
 }
+
 h3 {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 80px;
-  vertical-align: top;
-  letter-spacing: 1.2px;
-  color: #ffffff;
+  font-weight: 600;
+  font-size: 32px;
+  letter-spacing: 1.1px;
+  color: var(--primary-text-color);
   margin: 10px auto;
 }
 
 p.project-lead {
   font-weight: 300;
-  margin: 0;
+  padding-top: 10px;
 }
 
-a.navbar-brand {
-  font-family: "Fascinate", cursive;
+.intro {
+  text-align: justify;
 }
 
 img.portrait {
   vertical-align: center;
-  max-width: 320px;
-  max-height: 381px;
   mix-blend-mode: lighten;
   box-shadow: 4px 4px 4px 3px rgba(0, 0, 0, 0.35);
-  margin: 20px;
+  margin: 30px 20px 0 15px;
+  max-width: 83%;
 }
 
-button.primary-button {
-  background: #f6c90e;
-  border: 1px solid #f6c90e;
+.btn {
+  color: var(--secondary-text-color);
+  border: 1.2px solid;
   border-radius: 50px;
   text-align: center;
   padding: 18px 30px;
   text-transform: uppercase;
+  text-decoration: none;
   font-weight: 500;
   font-size: 14px;
-  line-height: 17px;
-  margin-top: 30px;
   white-space: nowrap;
 }
 
-button.primary-button:hover {
-  border: 1px solid #f6c90e;
-  background: #212529;
-  color: #f6c90e;
+a.primary-btn {
+  background-color: var(--branding-color);
+  border-color: 1px solid var(--branding-color);
+}
+
+a.primary-btn:hover {
+  border-color: var(--branding-color);
+  background-color: var(--primary-background-color);
+  color: var(--branding-color);
   box-shadow: 0 0 0 0.2rem #f6c80ea4;
 }
 
 a.github-btn {
-  color: #212529;
-  text-decoration: none;
-  background: #fc9a1a;
-  border: 1px solid #fc9a1a;
-  border-radius: 50px;
-  text-align: center;
-  padding: 13px 20px;
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 16px;
-  white-space: nowrap;
+  background-color: #fc9a1a;
+  border-color: #fc9a1a;
 }
 
 a.github-btn:hover {
-  border: 1px solid #fc9a1a;
-  background: #212529;
+  background-color: var(--primary-background-color);
   color: #fc9a1a;
-  box-shadow: 0 0 0 0.2rem #fc9a1aa2;
+  box-shadow: 0 0 0 0.2rem #fc9a1aad;
 }
 
 a.launch-btn {
-  color: #212529;
-  text-decoration: none;
-  background: #f4a5a1;
-  border: 1px solid #f4a5a1;
-  border-radius: 50px;
-  text-align: center;
-  padding: 13px 15.75px;
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 16px;
-  white-space: nowrap;
+  background-color: #f4a5a1;
+  border-color: #f4a5a1;
 }
 
 a.launch-btn:hover {
-  border: 1px solid #f4a5a1;
-  background: #212529;
+  background-color: var(--primary-background-color);
   color: #f4a5a1;
   box-shadow: 0 0 0 0.2rem #f4a5a1ad;
+}
+
+a.project-btn {
+  background-color: #f79486;
+  border-color: #f79486;
+  margin: 30px;
+}
+
+a.project-btn:hover {
+  background-color: var(--primary-background-color);
+  color: #f79486;
+  box-shadow: 0 0 0 0.2rem #f79486ad;
 }
 
 .project-image img {
@@ -125,50 +130,173 @@ a.launch-btn:hover {
 }
 
 .hero {
-  background-color: #212529;
-  padding: 90px 20px 100px;
-  text-align: center;
+  background-color: var(--primary-background-color);
+  padding: 40px 30px;
+}
+
+.hero-about {
+  background-color: var(--primary-background-color);
+  padding: 40px;
+}
+
+.yellow-fascinate {
+  color: var(--branding-color);
+  font-family: "Fascinate", cursive;
+}
+.flamingo-fascinate {
+  color: #f79486;
+  font-family: "Fascinate", cursive;
+}
+.marked {
+  color: var(--branding-color);
+}
+
+.tech-skills {
+  border-radius: 20px;
+  margin: 20px;
+  padding: 30px 13px;
+  background-color: var(--primary-background-color);
+  color: var(--secondary-text-color);
+}
+
+.tech-skills i {
+  font-size: 40px;
+  margin: 20px;
 }
 
 .work-inquiry {
   border-radius: 20px;
   margin: 20px;
-  padding: 40px;
-  background: #212529;
+  padding: 30px 50px;
+  background-color: var(--primary-background-color);
 }
 
 .footer {
-  background-color: #212529;
+  background-color: var(--primary-background-color);
   font-size: 16px;
   padding: 15px;
   width: 100%;
 }
 
 .footer a {
-  color: #f6c90e;
+  color: var(--branding-color);
   text-decoration: none;
   padding-left: 20px;
 }
 .footer a:hover {
-  color: #ffffff;
+  color: var(--primary-text-color);
 }
 
+/*    XS to SM device    */
+@media (max-width: 575.9px) {
+  .hero {
+    padding: 20px 2px 30px;
+  }
+  img.portrait {
+    max-width: 30%;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 5.7vw;
+    margin: 20px auto;
+  }
+  h2.header {
+    font-size: 22px;
+    font-weight: 500;
+  }
+  h3 {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px 30px;
+    line-height: 32px;
+  }
+  h4 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .btn {
+    padding: 15px 20px;
+    font-size: 12px;
+  }
+  .work-inquiry {
+    text-align: center;
+    padding: 20px 10px;
+  }
+  .footer {
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+/*    SM to MD devices    */
+@media (min-width: 576px) and (max-width: 767.9px) {
+  .hero {
+    padding: 15px 10px;
+  }
+  .work-inquiry {
+    text-align: center;
+  }
+  h1 {
+    font-size: 3.5vw;
+    margin: 20px auto;
+  }
+  h2.header {
+    font-size: 22px;
+    font-weight: 500;
+  }
+  h3 {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 35px;
+    line-height: 32px;
+  }
+}
+
+/*     MD to LG  devices */
+@media (min-width: 768px) and (max-width: 991px) {
+  h1 {
+    font-size: 3.4vw;
+    margin: 20px auto;
+  }
+  h2.header {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 28px;
+    padding: 0 35px;
+    line-height: 40px;
+  }
+  .btn {
+    padding: 15px 18px;
+    font-size: 13px;
+  }
+}
 /*
-font-family: "Alfa Slab One", cursive;
-font-family: 'Open Sans', sans-serif;
-font-family: "Fascinate", cursive;
+xs <576px	
+sm ≥576px
+md ≥768px	
+lg ≥992px	
+xl ≥1200px	
+xxl ≥1400px
+ text-shadow: 5px 5px 13px rgba(246, 201, 14, 0.6);
 */
+
+/*       heading animation     */
 h1 span {
   text-transform: uppercase;
   display: inline-block;
-  animation: animate 1s ease-in forwards;
+  animation: animate 1s ease-out backwards;
 }
-
 @keyframes animate {
   0% {
     opacity: 0;
     transform: rotateY(90deg);
-    filter: blur(10px);
+    filter: blur(12px);
   }
   100% {
     opacity: 1;
@@ -221,70 +349,12 @@ h1 span:nth-child(14) {
 h1 span:nth-child(15) {
   animation-delay: 3.8s;
 }
-
-@media (max-width: 575px) {
-  .hero {
-    padding: 20px 10px;
-  }
-  .work-inquiry {
-    text-align: center;
-    padding: 20px 10px;
-  }
-  img.portrait {
-    max-width: 120px;
-    max-height: 143px;
-  }
-  h1 {
-    font-size: 19px;
-    margin-bottom: 10px;
-  }
-  h3 {
-    font-size: 22px;
-    font-weight: 600;
-    line-height: 40px;
-  }
-  h4 {
-    font-size: 28px;
-    font-weight: 600;
-    margin-bottom: 20px;
-  }
-  button.primary-button {
-    margin: 15px auto;
-  }
-  p {
-    font-size: 14px;
-  }
-  .footer {
-    text-align: center;
-    font-size: 14px;
-    padding: 10px;
-  }
+h1 span:nth-child(16) {
+  animation-delay: 4s;
 }
-@media (min-width: 576px) and (max-width: 767px) {
-  .hero {
-    padding: 20px;
-  }
-  .work-inquiry {
-    text-align: center;
-  }
+h1 span:nth-child(17) {
+  animation-delay: 4.2s;
 }
-
-@media (min-width: 768px) and (max-width: 991px) {
-  h1 {
-    font-size: 28px;
-  }
-  h3 {
-    font-size: 28px;
-  }
-  img.portrait {
-    max-width: 240px;
-    max-height: 285px;
-  }
+h1 span:nth-child(18) {
+  animation-delay: 4.4s;
 }
-/*
-xs <576px	
-sm ≥576px
-md ≥768px	
-lg ≥992px	
-xl ≥1200px	
-xxl ≥1400px*/
