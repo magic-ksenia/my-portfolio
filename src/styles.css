@@ -139,10 +139,17 @@ a.project-btn:hover {
   padding: 40px;
 }
 
+.hero-project {
+  background-color: var(--primary-background-color);
+  padding: 30px;
+  text-align: center;
+}
+
 .yellow-fascinate {
   color: var(--branding-color);
   font-family: "Fascinate", cursive;
 }
+
 .flamingo-fascinate {
   color: #f79486;
   font-family: "Fascinate", cursive;
@@ -192,6 +199,10 @@ a.project-btn:hover {
   .hero {
     padding: 20px 2px 30px;
   }
+  .hero-project {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
   img.portrait {
     max-width: 30%;
     margin: 0 auto;
@@ -237,6 +248,10 @@ a.project-btn:hover {
 @media (min-width: 576px) and (max-width: 767.9px) {
   .hero {
     padding: 15px 10px;
+  }
+  .hero-project {
+    padding: 20px;
+    margin-bottom: 20px;
   }
   .work-inquiry {
     text-align: center;
