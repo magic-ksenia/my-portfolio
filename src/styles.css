@@ -121,6 +121,10 @@ a.blue-btn:hover {
   border-radius: 10px 10px 0 0;
 }
 
+li.nav-item {
+  padding: 0 10px;
+}
+
 .hero {
   background-color: var(--dark-color);
   padding: 40px 30px;
@@ -331,7 +335,7 @@ h4.blue-header {
     font-weight: 500;
     font-size: 18px;
     text-align: center;
-    padding: 20px 10px;
+    padding: 20px 20px 20px 10px;
   }
   h1.orange-header {
     font-size: 3vw;
@@ -467,4 +471,17 @@ a span {
 }
 a:hover span {
   max-width: 7rem;
+
+
+
+Font
+  "Source Sans Pro" - 600×
+Family    "Source Sans Pro", "Lucida Grande", sans-serif;
+Style   normal
+Weigh  600
+Size 18px
+Line Height 21px
+Color #333333
+AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz
+
 }*/
