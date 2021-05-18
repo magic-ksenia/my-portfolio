@@ -11,7 +11,11 @@
   --subheader-font: "Catamaran", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 body {
+  overflow-x: hidden;
   background-color: var(--light-color);
   color: var(--light-color);
   margin: 0;
@@ -69,6 +73,15 @@ a {
   color: var(--dark-color);
 }
 
+a.my-contact-link {
+  color: var(--blue-color);
+  font-weight: 600;
+  text-decoration: underline;
+  font-size: larger;
+}
+a.my-contact-link:hover {
+  color: var(--orange-color);
+}
 .btn {
   color: var(--dark-color);
   border: 1px solid;
@@ -169,12 +182,13 @@ li.nav-item {
   font-weight: 900;
 }
 h2.orange-header {
-  font-size: 2.6vw;
+  font-size: 2.8vw;
   font-weight: 500;
 }
 h1.orange-header {
   font-size: 2.8vw;
   margin: 30px auto;
+  justify-content: center;
 }
 
 h4.orange-header {
@@ -196,10 +210,19 @@ h4.blue-header {
   background-color: var(--dark-color);
   color: var(--dark-color);
 }
+.tech-skills h4 {
+  font-size: 2.5vw;
+}
 
 .tech-skills i {
   font-size: 40px;
   margin: 20px;
+}
+
+.tech-skills a i {
+  font-size: 14px;
+  padding: 0;
+  margin-top: 0x;
 }
 
 .contact-me {
@@ -337,6 +360,11 @@ h4.blue-header {
     text-align: center;
     padding: 20px 20px 20px 10px;
   }
+  .footer {
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+  }
   h1.orange-header {
     font-size: 3vw;
     margin: 20px auto;
@@ -390,6 +418,8 @@ h4.blue-header {
 h1 span {
   text-transform: uppercase;
   display: inline-block;
+  padding: 0px;
+  margin: 0px;
   animation: animate 1s ease-out backwards;
 }
 @keyframes animate {
