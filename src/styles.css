@@ -211,7 +211,7 @@ h4.blue-header {
   color: var(--dark-color);
 }
 .tech-skills h4 {
-  font-size: 2.5vw;
+  font-size: 36px;
 }
 
 .tech-skills i {
@@ -309,6 +309,9 @@ h4.blue-header {
     color: var(--blue-color);
     font-family: var(--header-font);
   }
+  .tech-skills h4 {
+    font-size: 27px;
+  }
   .contact-me {
     border-radius: 20px;
     margin: 15px;
@@ -326,8 +329,8 @@ h4.blue-header {
 
   .tech-skills {
     border-radius: 20px;
-    margin: 20px;
-    padding: 30px 13px;
+    margin: 10px;
+    padding: 20px 13px;
     background-color: var(--dark-color);
     color: var(--dark-color);
   }
@@ -336,6 +339,7 @@ h4.blue-header {
     font-size: 18px;
     text-align: center;
     padding: 20px 10px;
+    margin: 10px;
   }
   .footer {
     text-align: center;
@@ -383,6 +387,13 @@ h4.blue-header {
     font-size: 30px;
     margin-bottom: 15px;
   }
+  .tech-skills h4 {
+    font-size: 28px;
+  }
+  .tech-skills {
+    margin: 10px;
+    padding: 10px 13px;
+  }
 }
 
 /*     MD to LG  devices */
@@ -402,6 +413,13 @@ h4.blue-header {
   h4.orange-header {
     font-size: 32px;
   }
+  .tech-skills h4 {
+    font-size: 32px;
+  }
+  .tech-skills {
+    margin: 10px;
+    padding: 10px 13px;
+  }
   .btn {
     padding: 15px 18px;
     font-size: 13px;
@@ -420,7 +438,7 @@ h1 span {
   display: inline-block;
   padding: 0px;
   margin: 0px;
-  animation: animate 0.75s ease-out backwards;
+  animation: animate 1s cubic-bezier(0.47, 0, 0.745, 0.715) backwards;
 }
 @keyframes animate {
   0% {
@@ -435,58 +453,58 @@ h1 span {
   }
 }
 h1 span:nth-child(1) {
-  animation-delay: 0.25s;
+  animation-delay: 0.05s;
 }
 h1 span:nth-child(2) {
-  animation-delay: 0.4s;
+  animation-delay: 0.2s;
 }
 h1 span:nth-child(3) {
-  animation-delay: 0.55s;
+  animation-delay: 0.35s;
 }
 h1 span:nth-child(4) {
-  animation-delay: 0.7s;
+  animation-delay: 0.5s;
 }
 h1 span:nth-child(5) {
-  animation-delay: 0.85s;
+  animation-delay: 0.65s;
 }
 h1 span:nth-child(6) {
-  animation-delay: 1s;
+  animation-delay: 0.8s;
 }
 h1 span:nth-child(7) {
-  animation-delay: 1.2s;
+  animation-delay: 0.95s;
 }
 h1 span:nth-child(8) {
-  animation-delay: 1.35s;
+  animation-delay: 1.1s;
 }
 h1 span:nth-child(9) {
-  animation-delay: 1.5s;
+  animation-delay: 1.25s;
 }
 h1 span:nth-child(10) {
-  animation-delay: 1.65s;
+  animation-delay: 1.4s;
 }
 h1 span:nth-child(11) {
-  animation-delay: 1.8s;
+  animation-delay: 1.55s;
 }
 h1 span:nth-child(12) {
-  animation-delay: 1.95s;
+  animation-delay: 1.6s;
 }
 h1 span:nth-child(13) {
-  animation-delay: 2.1s;
+  animation-delay: 1.75s;
 }
 h1 span:nth-child(14) {
-  animation-delay: 2.25s;
+  animation-delay: 1.9s;
 }
 h1 span:nth-child(15) {
-  animation-delay: 2.4s;
+  animation-delay: 2.05s;
 }
 h1 span:nth-child(16) {
-  animation-delay: 2.55s;
+  animation-delay: 2.2s;
 }
 h1 span:nth-child(17) {
-  animation-delay: 2.7s;
+  animation-delay: 2.35s;
 }
 h1 span:nth-child(18) {
-  animation-delay: 2.8s;
+  animation-delay: 2.5s;
 }
 
 /*
